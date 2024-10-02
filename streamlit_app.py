@@ -1,6 +1,14 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("🎈 HELLO WORLD")
+
+name = st.text_input("name ;")
+
+if(name):
+    st("hello", name)
+else:
+    st.warning("isi nama mahdin")
+    
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    name
 )
